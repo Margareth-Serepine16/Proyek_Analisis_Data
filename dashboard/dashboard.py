@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
+
 # Load Dataset
 @st.cache_data
 def load_data():
@@ -11,7 +13,6 @@ def load_data():
 df = load_data()
 
 # Konfigurasi Tema
-st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
 st.title("🚴‍♂️ Dashboard Analisis Penyewaan Sepeda")
 
 # Sidebar - Filter Tahun
