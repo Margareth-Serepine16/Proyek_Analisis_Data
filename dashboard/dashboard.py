@@ -6,7 +6,7 @@ import seaborn as sns
 st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
 
 # Load Dataset
-df = pd.read_csv("dashboard/main_dataset.csv")
+df = pd.read_csv("main_dataset.csv")
 
 # Konfigurasi Tema
 st.title("🚴‍♂️ Dashboard Analisis Penyewaan Sepeda")
