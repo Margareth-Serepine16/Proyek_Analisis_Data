@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -6,7 +7,10 @@ import seaborn as sns
 st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
 
 # Load Dataset
-df = pd.read_csv("main_dataset.csv")
+file_path = os.path.join(os.path.dirname(__file__), "main_dataset.csv")
+
+# Baca file CSV
+df = pd.read_csv(file_path)
 
 # Konfigurasi Tema
 st.title("🚴‍♂️ Dashboard Analisis Penyewaan Sepeda")
